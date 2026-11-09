@@ -970,7 +970,7 @@ function protocole(v, id) {
   }[v.voie];
   P(voie);
   if (v.voie) P(v.capsule === 'Capsulectomie' ? 'Capsulectomie.' : 'Capsulotomie, capsule conservée et mise sur fils repères.');
-  P(v.voie ? 'Luxation de la tête, ostéotomie du col fémoral selon la planification et extraction de la tête fémorale' : '', v.diam_tete_patient ? `(diamètre mesuré : ${v.diam_tete_patient} mm)` : '', v.voie ? '.' : '');
+  P(v.voie ? 'Recoupe du col fémoral selon la planification, puis extraction de la tête fémorale fracturée au tire-bouchon' : '', v.diam_tete_patient ? `(diamètre mesuré : ${v.diam_tete_patient} mm)` : '', v.voie ? '.' : '');
   /* Cotyle */
   if (pth) {
     P('Exposition du cotyle, excision du labrum et du ligament rond. Fraisage progressif du cotyle jusqu\'à l\'os sous-chondral saignant.');
